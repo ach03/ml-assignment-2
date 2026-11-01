@@ -1,0 +1,121 @@
+{
+  "dataset_name": "Breast Cancer Wisconsin (Diagnostic)",
+  "target_col": "diagnosis",
+  "classes": [
+    "benign",
+    "malignant"
+  ],
+  "n_classes": 2,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "numeric_features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "categorical_features": [],
+  "n_rows": 569,
+  "n_train": 455,
+  "n_test": 114,
+  "models": {
+    "Logistic Regression": {
+      "file": "logistic_regression.joblib",
+      "params": {
+        "C": 1
+      },
+      "cv_auc": 0.9958
+    },
+    "Decision Tree": {
+      "file": "decision_tree.joblib",
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 5
+      },
+      "cv_auc": 0.9554
+    },
+    "KNN": {
+      "file": "knn.joblib",
+      "params": {
+        "n_neighbors": 11,
+        "weights": "distance"
+      },
+      "cv_auc": 0.9892
+    },
+    "Naive Bayes": {
+      "file": "naive_bayes.joblib",
+      "params": {
+        "var_smoothing": 1e-09
+      },
+      "cv_auc": 0.987
+    },
+    "Support Vector Machine": {
+      "file": "svm.joblib",
+      "params": {
+        "C": 10,
+        "gamma": 0.01
+      },
+      "cv_auc": 0.9954
+    }
+  },
+  "trained_with": {
+    "scikit-learn": "1.9.1",
+    "python": "3.12.7"
+  }
+}
