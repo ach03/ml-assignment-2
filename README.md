@@ -28,7 +28,7 @@ The concrete task is **breast-cancer diagnosis**: given 30 numeric measurements 
 
 ## c. GitHub Repository Link
 
-https://github.com/YOUR-USERNAME/YOUR-REPO-NAME
+https://github.com/ach03/ml-assignment-2.git
 
 Repository layout:
 
@@ -92,7 +92,7 @@ Confusion-matrix counts on the test set (positive = malignant):
 
 ## Streamlit Application
 
-Live app: https://YOUR-APP-NAME.streamlit.app
+Live app: https://ml-assignment-2-8naxb5xha6hsj996fnecap.streamlit.app/
 
 The app (`app.py`) loads the pre-trained pipelines from `model/` - **it never retrains** - and provides:
 
